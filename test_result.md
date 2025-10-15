@@ -107,63 +107,78 @@ user_problem_statement: "Build CARD RUNNER - a 2D mobile endless runner game wit
 backend:
   - task: "Game API - Root endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "low"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Created root API endpoint returning 'Card Runner API' message"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: GET /api/ returns correct response {'message': 'Card Runner API'} with status 200"
 
   - task: "Game Progress - Save endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Created POST /api/game/progress endpoint to save player progress (cards, gold, high score, distance)"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: POST /api/game/progress successfully saves progress data with cards, gold, high_score, total_distance. Returns {'status': 'success', 'message': 'Progress saved'}. Also tested updating existing progress - works correctly."
 
   - task: "Game Progress - Load endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Created GET /api/game/progress/{device_id} endpoint to retrieve player progress"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: GET /api/game/progress/{device_id} correctly retrieves saved progress and returns default values {'cards': [], 'gold': 0, 'high_score': 0, 'total_distance': 0} for non-existent devices"
 
   - task: "Game Session - Save endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Created POST /api/game/session endpoint to save completed game sessions"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: POST /api/game/session successfully saves game sessions with device_id, score, distance, cards_collected. Returns session object with UUID and timestamp. Tested with multiple sessions."
 
   - task: "Leaderboard - Get top scores"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Created GET /api/game/leaderboard endpoint to retrieve top 10 scores"
+      - working: true
+        agent: "testing"
+        comment: "✅ TESTED: GET /api/game/leaderboard correctly returns sessions sorted by score (descending). Tested with multiple entries and custom limit parameter. Leaderboard shows device_id, score, distance, timestamp."
 
 frontend:
   - task: "Main Menu Screen"
