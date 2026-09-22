@@ -6,7 +6,7 @@ They are organized by difficulty level to make it easier to learn step by step.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 /javascript_projects
    /beginner       -> Basic algorithms and console programs
@@ -21,7 +21,7 @@ They are organized by difficulty level to make it easier to learn step by step.
 
 ---
 
-## 🚀 How to Run
+## How to Run
 ### JavaScript
 Run JS files in a browser console or with **Node.js**:
 ```bash
@@ -36,7 +36,7 @@ python filename.py
 
 ---
 
-## 🎯 Purpose
+## Purpose
 This repo is meant for **practice and learning** programming concepts in two languages:  
 - Variables & Input/Output  
 - Conditions & Loops  
@@ -46,9 +46,8 @@ This repo is meant for **practice and learning** programming concepts in two lan
 
 ---
 
-## 🏆 Next Steps
+## Next Steps
 - Add more advanced projects (APIs, databases, GUIs).  
 - Compare similar projects in both JavaScript and Python.  
 - Practice Git/GitHub workflow.  
 
-Happy coding! 🚀
