@@ -47,7 +47,7 @@ This repo is meant for **practice and learning** programming concepts in two lan
 ---
 
 ## Next Steps
-- Add more advanced projects (APIs, databases, GUIs).  
+- Add more advanced projects (APIs, databases).  
 - Compare similar projects in both JavaScript and Python.  
 - Practice Git/GitHub workflow.  
 
