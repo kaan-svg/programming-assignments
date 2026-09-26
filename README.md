@@ -1,53 +1,51 @@
-[README.md](https://github.com/user-attachments/files/22186368/README.md)
-# Learning Projects Repository
+#     Programming-assignments
 
-This repository contains beginner, intermediate, and advanced projects in **JavaScript** and **Python**.  
-They are organized by difficulty level to make it easier to learn step by step.
+Assignments and practice projects from my first year of Computer Engineering at **MEF University**, written in **Python** and **JavaScript**. Projects are grouped by level so the progression from basics to small applications is easy to follow.
 
 ---
 
-## Project Structure
-```
-/javascript_projects
-   /beginner       -> Basic algorithms and console programs
-   /intermediate   -> Applications with conditions, functions, and user input
-   /advanced       -> Mini applications with menu systems and multiple features
+## Structure
 
-/python_projects
-   /beginner       -> Basic calculators, converters, and simple games
-   /intermediate   -> Timers, shopping carts, and quizzes
-   /advanced       -> Number guessing, rock-paper-scissors, dice simulator
+```
+/python
+   /basics          -> Calculators, unit converters, simple games
+   /practice        -> Timers, shopping cart, quizzes, file reading
+   /mini-projects   -> Number guessing, rock-paper-scissors, dice simulator
+
+/javascript
+   /basics          -> Basic algorithms and console programs
+   /practice        -> Programs with conditions, functions and user input
+   /mini-projects   -> Menu-driven apps with multiple features
 ```
 
 ---
 
 ## How to Run
-### JavaScript
-Run JS files in a browser console or with **Node.js**:
+
+**Python** (3.10+)
 ```bash
-node filename.js
+python path/to/file.py
 ```
 
-### Python
-Run Python files directly:
+
+**JavaScript** (Node.js)
 ```bash
-python filename.py
+node path/to/file.js
 ```
 
 ---
 
-## Purpose
-This repo is meant for **practice and learning** programming concepts in two languages:  
-- Variables & Input/Output  
-- Conditions & Loops  
-- Functions & Modularization  
-- Randomness, Lists, Dictionaries  
-- Mini projects and games  
+## Concepts Covered
+- Variables, input/output and type conversion
+- Conditions and loops
+- Functions and modular code
+- Lists, dictionaries and file I/O
+- Randomness and simple game logic
 
 ---
 
-## Next Steps
-- Add more advanced projects (APIs, databases).  
-- Compare similar projects in both JavaScript and Python.  
-- Practice Git/GitHub workflow.  
+## Highlights
+- **Dice Simulator (Python)** – Rolls any number of dice and draws them side by side with ASCII art
+- **ATM (JS)** – Menu-driven banking simulation with balance inquiry, withdrawal and deposit
+- **Number Guessing Game (Python)** – Input-validated guessing game that tracks the number of attempts
 
