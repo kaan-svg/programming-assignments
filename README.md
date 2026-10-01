@@ -29,9 +29,9 @@ python path/to/file.py
 
 
 **JavaScript** (Node.js)
-```bash
-node path/to/file.js
-```
+**JavaScript**
+These scripts use `prompt()` and `alert()`, which only exist in the browser.
+Open any web page, press **F12 → Console**, paste the code and press Enter.
 
 ---
 
