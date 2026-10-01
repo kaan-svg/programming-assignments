@@ -2,6 +2,9 @@ import random
 options=("rock","paper","scissors")
 while True:
     player=input("Enter rock/paper/scissors: ")
+    if player not in options:
+        print("İnvalid choice")
+        continue
     computer=random.choice(options)
     print(f"Player: {player}, Computer: {computer}")
     if player==computer:
