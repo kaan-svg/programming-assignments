@@ -9,7 +9,10 @@ switch (secim) {
         break;
     case "2":
         let cekilecekTutar = Number(prompt("Çekmek istediğiniz tutarı giriniz :"));
-        if (cekilecekTutar <= bakiye) {
+        if(cekilecekTutar <= 0){
+          alert("Geçersiz tutar")
+        }
+        else if (cekilecekTutar <= bakiye) {
             bakiye -= cekilecekTutar;
             alert("Kalan bakiye : " + bakiye);
         } else {
@@ -18,6 +21,9 @@ switch (secim) {
         break;
     case "3":
         let yatirilacakTutar = Number(prompt("Yatırılacak tutarı giriniz :"));
+    if(yatirilacakTutar<=0){
+      alert("Geçersiz bakiye")
+    }
         bakiye += yatirilacakTutar;
         alert("Güncel bakiyeniz : " + bakiye);
         break;
